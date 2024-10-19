@@ -8,7 +8,7 @@ module top(
     input rx,
     output [7:0] rxout,
     output rxdone, txdone
-    );
+);
     
  parameter clk_value = 100_000;
  parameter baud = 9600;
