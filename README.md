@@ -15,9 +15,9 @@ Serial Data (SDA) : Transfer of data takes place through this pin.
 Serial Clock (SCL) : It carries the clock signal.
 I2C operates in 2 modes: Master mode, Slave mode
 Each data bit transferred on SDA line is synchronized by a high to the low pulse of each clock on the SCL line.
-Here are the steps of I2C (Inter-Integrated Circuit) data transmission
-Start Condition: The master device sends a start condition by pulling the SDA line low while the SCL line is high. This signals that a transmission is about to begin.
-Addressing the Slave: The master sends the 7-bit address of the slave device it wants to communicate with, followed by a read/write bit. The read/write bit indicates whether it wants to read from or write to the slave.
-Acknowledge Bit (ACK): The addressed slave device responds by pulling the SDA line low during the next clock pulse (SCL). This confirms that the slave is ready to communicate.
-Data Transmission: The master or slave (depending on the read/write operation) sends data in 8-bit chunks. After each byte, an ACK is sent to confirm that the data has been received successfully.
-Stop Condition: When the transmission is complete, the master sends a stop condition by releasing the SDA line to high while the SCL line is high. This signals that the communication session has ended.
+Here are the steps of I2C (Inter-Integrated Circuit) data transmission:
+*Start Condition: The master device sends a start condition by pulling the SDA line low while the SCL line is high. This signals that a transmission is about to begin.
+*Addressing the Slave: The master sends the 7-bit address of the slave device it wants to communicate with, followed by a read/write bit. The read/write bit indicates whether it wants to read from or write to the slave.
+*Acknowledge Bit (ACK): The addressed slave device responds by pulling the SDA line low during the next clock pulse (SCL). This confirms that the slave is ready to communicate.
+*Data Transmission: The master or slave (depending on the read/write operation) sends data in 8-bit chunks. After each byte, an ACK is sent to confirm that the data has been received successfully.
+*Stop Condition: When the transmission is complete, the master sends a stop condition by releasing the SDA line to high while the SCL line is high. This signals that the communication session has ended.
